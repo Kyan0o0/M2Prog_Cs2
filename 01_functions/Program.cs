@@ -11,12 +11,44 @@
             {
                 Console.WriteLine("...");
                 Vraag1();
+                Vraag2();
+                Vraag3();
+                Vraag4();
+                Vraag5();
             }
                 internal void Vraag1()
                 {
-                    Console.WriteLine("als deze in je kont zou gaan, Zou je dan nog leven?");
+                    Console.WriteLine("How long do you think you'd survive in a zombie apocalypse?");
                     string antwoord = Console.ReadLine();
 
                     Console.WriteLine(antwoord);
                 }
+                internal void Vraag2()
+                {
+                    Console.WriteLine("Why do round pizzas come in square boxes?");
+                    string antwoord = Console.ReadLine();
+
+                    Console.WriteLine(antwoord);
+                }          
+                internal void Vraag3()
+                {
+                    Console.WriteLine("What would you do if you won a million dollars?");
+                    string antwoord = Console.ReadLine();
+
+                    Console.WriteLine(antwoord);
+                }          
+                internal void Vraag4()
+                {
+                    Console.WriteLine("What is the worst game you played but that you liked anyway?");
+                    string antwoord = Console.ReadLine();
+
+                    Console.WriteLine(antwoord);
+                }          
+                internal void Vraag5()
+                {
+                    Console.WriteLine("Who would win gojo or sukuna?");
+                    string antwoord = Console.ReadLine();
+
+                    Console.WriteLine(antwoord);
+                }          
     }
