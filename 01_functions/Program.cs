@@ -1,6 +1,9 @@
 ﻿namespace _01_functions;
     internal class Program
     {
+       string[] vragen = new string[] {
+        "Best pokemon?"
+       };
             static void Main(string[] args)
             {
                 Program program = new Program();
@@ -15,6 +18,8 @@
                 Vraag3();
                 Vraag4();
                 Vraag5();
+                string vraag0 = GetVraag(0);
+                Console.WriteLine(vraag0);
             }
                 internal void Vraag1()
                 {
@@ -50,5 +55,34 @@
                     string antwoord = Console.ReadLine();
 
                     Console.WriteLine(antwoord);
-                }          
+                }       
+                internal string Vraag7()
+                {
+                    Console.WriteLine("Best pokemon?");
+                    string antwoord = Console.ReadLine();
+
+                    return antwoord;
+                }       
+                internal string GetVraag(int vraagIndex)
+                {
+                    return vragen[vraagIndex];
+                }
+                 
+    internal string GetRandomVraag()
+    {
+        Random random = new Random();
+        int randomIndex = random.Next(vragen.Length);
+        return GetVraag(randomIndex);
     }
+    internal string AskRandomQuestion()
+    {
+        string vraag8 = GetRandomVraag();
+        Console.WriteLine(vraag8);
+        string antwoord = Console.ReadLine();
+        Console.WriteLine(antwoord);
+        return antwoord;
+    }
+}
+                   
+    
+    
